@@ -1,0 +1,46 @@
+.header{
+    background: #292847;
+    width: 100%;
+    height: 10rem;
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 5px #000;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.a{
+    color: #4AD0D1;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.a img{
+    margin-left: 1rem;
+    width: 2.5rem;
+        height: 2.5rem;
+}
+
+@media (max-width: 1000px){
+    .header{
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .header{
+        padding: 0 1.5rem;
+    }
+    .a{
+        font-size: 2rem;
+    }
+    .a img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-left: 0.5rem;
+    }
+}

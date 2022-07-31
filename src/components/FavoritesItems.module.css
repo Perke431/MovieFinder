@@ -1,0 +1,64 @@
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 20rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.container img{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+}
+
+.name{
+    font-size: 2.6rem;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.rating{
+    width: 7.5rem;
+    height: 7.5rem;
+    display: grid;
+    place-items: center;
+    background: #555394;
+    color: #14FF00;
+    font-size: 2.6rem;
+    font-family: 'Montserrat';
+    border-radius: 1rem;
+}
+
+.year{
+    color: #fff;
+    font-size: 2.6rem;
+    font-family: 'Montserrat';
+}
+
+.container button{
+    width: 40rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #555394;
+    color: #4AD0D1;
+    font-size: 2.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.container button img{
+    width: 5rem;
+    height: 5rem;
+    margin-right: 2rem;
+}

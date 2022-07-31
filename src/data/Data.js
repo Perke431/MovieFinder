@@ -1,0 +1,257 @@
+const movies = [
+  {
+    id: 0,
+    name: "Everything Everywhere All at Once",
+    year: 2022,
+    rating: 8.2,
+    poster:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQnDm2i_Hj23pOvoApmbTD4HLZSBYYGfJsJ0DcKsXHPXz_yF1Ao",
+    genres: ["Action", "Adventure", "Comedy"],
+    plot: "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes connecting with the lives she could have led.",
+    favorite: false,
+  },
+  {
+    id: 1,
+    name: "Top Gun: Maverick",
+    year: 2022,
+    rating: 8.6,
+    poster:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRLeDZOOOe39EylZoDSJteMkbX8lqS4JT-SvEZ8W2M6s1DRBZMd",
+    genres: ["Action", "Drama"],
+    plot: "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
+    favorite: false,
+  },
+  {
+    id: 2,
+    name: "The Northman",
+    year: 2022,
+    rating: 7.2,
+    poster:
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTV_78GBoE0foy5YU1wW7HdAgEKcfEPQDLnTaiK52CEmKI-FkNi",
+    genres: ["Action", "Adventure", "Drama"],
+    plot: "From visionary director Robert Eggers comes The Northman, an action-filled epic that follows a young Viking prince on his quest to avenge his father's murder.",
+    favorite: false,
+  },
+  {
+    id: 3,
+    name: "The Batman",
+    year: 2022,
+    rating: 7.9,
+    poster:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRBkxgl2A2PhE_6tklFLT0bxn5NLhvhsnpXGhmXBt_zotrlVHmo",
+    genres: ["Action", "Crime", "Drama"],
+    plot: "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+    favorite: false,
+  },
+  {
+    id: 4,
+    name: "RRR",
+    year: 2022,
+    rating: 8.0,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG6L2WmlrU5r2HzTKoXTJC5DFyU9vMbUJ79Cp5P7RB5QEEnXkH",
+    genres: ["Action", "Drama"],
+    plot: "A fictitious story about two legendary revolutionaries and their journey away from home before they started fighting for their country in 1920s.",
+    favorite: false,
+  },
+  {
+    id: 5,
+    name: "Turning Red",
+    year: 2022,
+    rating: 7,
+    poster:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRnTnlyQqGAGDEDgqouPXXC27s3DTdAol5KEPJQCp9d5XkDeI_3",
+    genres: ["Animation", "Adventure", "Comedy"],
+    plot: "A 13-year-old girl named Meilin turns into a giant red panda whenever she gets too excited.",
+    favorite: false,
+  },
+  {
+    id: 6,
+    name: "Jackass Forever",
+    year: 2022,
+    rating: 6.9,
+    poster:
+      "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT802fy7Xv9KqWxfPVVwhomeK9Js52XlBUy7GGL0fLg3NekXaaG",
+    genres: ["Documentary", "Action", "Comedy"],
+    plot: "After 11 years, the Jackass crew is back for another crusade.",
+    favorite: false,
+  },
+  {
+    id: 7,
+    name: "Kimi",
+    year: 2022,
+    rating: 6.3,
+    poster:
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcReguyMVf-itNr4VKlfCCCL6f1bqT-7RzyejtTyYeWtGVAavv9z",
+    genres: ["Crime", "Drama", "Thriller"],
+    plot: "An agoraphobic Seattle tech worker uncovers evidence of a crime.",
+    favorite: false,
+  },
+  {
+    id: 8,
+    name: "Hustle",
+    year: 2022,
+    rating: 7.4,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxbfSrtzxmFR78b53KOtCQEQsfKDbBKCNyqsrG6azXjkAL_8Lr",
+    genres: ["Comedy", "Drama", "Sport"],
+    plot: "A basketball scout discovers a phenomenal street ball player while in Spain and sees the prospect as his opportunity to get back into the NBA.",
+    favorite: false,
+  },
+  {
+    id: 9,
+    name: "Good Luck to You, Leo Grande",
+    year: 2022,
+    rating: 7.1,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtYoXJAz__EblTkMamRJnjzjyRQWmXLCwCuRRI9kIE35BNhm4h",
+    genres: ["Comedy", "Drama"],
+    plot: "Nancy Stokes, a 55-year-old widow, is yearning for some adventure, human connection and some sex--some good sex.",
+    favorite: false,
+  },
+  {
+    id: 10,
+    name: "Elvis",
+    year: 2022,
+    rating: 7.8,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSObvAvTibbMZ47hnPlZzXLWPTY3-IWF4zUs6VFhugXq3bhD2Kg",
+    genres: ["Biography", "Drama", "Music"],
+    plot: "The life of American music icon Elvis Presley, from his childhood to becoming a rock and movie star in the 1950s while maintaining a complex relationship with his manager, Colonel Tom Parker.",
+    favorite: false,
+  },
+  {
+    id: 11,
+    name: "Fresh",
+    year: 2022,
+    rating: 6.7,
+    poster:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTvKUdHHtRU_qr3VwE746hj5RcV2lCVt7GmjbJXmI2y3_ToJj7b",
+    genres: ["Comedy", "Horror", "Thriller"],
+    plot: "The horrors of modern dating seen through one young woman's defiant battle to survive her new boyfriend's unusual appetites.",
+    favorite: false,
+  },
+  {
+    id: 12,
+    name: "Dune",
+    year: 2021,
+    rating: 8.0,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvJznVehDbSUPihJbSTNwH8Tgnvh4ZDxs0J4hV06wOvHHidHul",
+    genres: ["Action", "Adventure", "Drama"],
+    plot: "A noble family becomes embroiled in a war for control over the galaxy's most valuable asset while its heir becomes troubled by visions of a dark future.",
+    favorite: false,
+  },
+  {
+    id: 13,
+    name: "Spider-Man: No Way Home",
+    year: 2021,
+    rating: 8.3,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrdPsGJEBxBev7gKo_EMp0Pgk7Q7su_xTUxf3vo8dE9S_CiG2Z",
+    genres: ["Action", "Adventure", "Fantasy"],
+    plot: "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear, forcing Peter to discover what it truly means to be Spider-Man.",
+    favorite: false,
+  },
+  {
+    id: 14,
+    name: "Shang-Chi and The Legend of The Ten Rings",
+    year: 2021,
+    rating: 7.4,
+    poster:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSE1tl-EYpaW6yDtmxsSsL9Wl_SRDK5PNJ0bCMBnvSAabEYKitf",
+    genres: ["Action", "Adventure", "Fantasy"],
+    plot: "Shang-Chi, the master of weaponry-based Kung Fu, is forced to confront his past after being drawn into the Ten Rings organization.",
+    favorite: false,
+  },
+  {
+    id: 15,
+    name: "The Power of the Dog",
+    year: 2021,
+    rating: 6.8,
+    poster:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRG1YExkz-5ZSf7gxoWkpGw8B0EzlVK4QQAiYjJv0cGqSl1sndH",
+    genres: ["Drama", "Romance", "Western"],
+    plot: "Charismatic rancher Phil Burbank inspires fear and awe in those around him. When his brother brings home a new wife and her son, Phil torments them until he finds himself exposed to the possibility of love.",
+    favorite: false,
+  },
+  {
+    id: 16,
+    name: "No Time to Die",
+    year: 2021,
+    rating: 7.3,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFNNKp6zVnJW0LSgA8UrJikGnr6pcZSBQS33xA1HWuDFXkqUK",
+    genres: ["Action", "Adventure", "Thriller"],
+    plot: "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+    favorite: false,
+  },
+  {
+    id: 17,
+    name: "Tenet",
+    year: 2020,
+    rating: 7.3,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4o4eBZdZWCR0iNFjiu1p4BKAIwIOkm_tZr3A-WUu4IAAcrq57",
+    genres: ["Action", "Sci-Fi", "Thriller"],
+    plot: "Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
+    favorite: false,
+  },
+  {
+    id: 18,
+    name: "I'm Thinking of Ending Things",
+    year: 2020,
+    rating: 6.6,
+    poster:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRDvGixVY1QejpI9pEo_mC_97wKSaC93ths-gZ4kwN7uuN_kSVO",
+    genres: ["Drama", "Thriller"],
+    plot: "Full of misgivings, a young woman travels with her new boyfriend to his parents' secluded farm. Upon arriving, she comes to question everything she thought she knew about him, and herself.",
+    favorite: false,
+  },
+  {
+    id: 19,
+    name: "The Invisible Man",
+    year: 2020,
+    rating: 7.1,
+    poster:
+      "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRF_P78fzLMWkmN6VmyfKGTyDXs0AjwEpoXH57XJqwLofyMbDkz",
+    genres: ["Drama", "Horror", "Mistery"],
+    plot: "When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.",
+    favorite: false,
+  },
+  {
+    id: 20,
+    name: "Avengers: Endgame",
+    year: 2019,
+    rating: 8.4,
+    poster:
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQA_-tL18_rj9zEcjN6n41NEaJm-kRNF9UeOtvksZ4z_OW6jRA9",
+    genres: ["Action", "Adventure", "Drama"],
+    plot: "After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe.",
+    favorite: false,
+  },
+  {
+    id: 21,
+    name: "Joker",
+    year: 2019,
+    rating: 8.4,
+    poster:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuTcvL4wc0fbBjm1h5CRiFEZ2TnNKtu8KtoPSxTsj6mkedHeWl",
+    genres: ["Crime", "Drama", "Thriller"],
+    plot: "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of an iconic villain.",
+    favorite: false,
+  },
+  {
+    id: 22,
+    name: "Knives Out",
+    year: 2019,
+    rating: 7.9,
+    poster:
+      "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHmw-bKBYMQAHV70PEpOaKMYnkcrp62ZF_lbadpInjTlLq4rib",
+    genres: ["Comedy", "Crime", "Drama"],
+    plot: "A detective investigates the death of the patriarch of an eccentric, combative family.",
+    favorite: false,
+  },
+];
+
+export default movies;
