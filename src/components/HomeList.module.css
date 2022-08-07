@@ -1,7 +1,7 @@
 .container{
     width: 100%;
     min-height: 80vh;
-    padding: 5rem 8rem;
+    padding: 8rem;
     display: flex;
     flex-direction: column;
 }
@@ -17,8 +17,41 @@
 
 .card-container{
     width: 100%;
-    height: 60rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5rem;
+}
+
+@media (max-width: 1700px) {
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 5rem;
+    }
+}
+
+@media (max-width: 1400px){
+    .container{
+        padding: 10rem 5rem;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 850px){
+    .card-container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        padding: 10rem 2.5rem ;
+    }
+    .card-container{
+        row-gap: 10rem;
+        height: 100%;
+    }
 }

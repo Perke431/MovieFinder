@@ -8,14 +8,16 @@ import SingleMovie from "./pages/SingleMovie";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { MovieProvider } from "./context";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <Header />
+    <MovieProvider>
+      <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/favorites" element={<Favorites />} />
@@ -23,7 +25,8 @@ root.render(
           <Route path="/movie/:id" element={<SingleMovie />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-    <Footer />
-    </BrowserRouter>
+        <Footer />
+      </BrowserRouter>
+    </MovieProvider>
   </React.StrictMode>
 );

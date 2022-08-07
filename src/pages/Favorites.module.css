@@ -1,0 +1,29 @@
+.container{
+    background: #1B1A2E;
+    min-height: 100vh;
+    padding: 10rem;
+}
+
+.empty{
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 5rem;
+    color: #4AD0D1;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 1400px){
+    .container{
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 600px){
+    .container{
+        padding: 2.5rem;
+    }
+    .empty{
+        font-size: 3rem;
+        text-align: center;
+    }
+}

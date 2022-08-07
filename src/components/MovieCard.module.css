@@ -1,20 +1,21 @@
 .container{
-    width: 40rem;
-    height: 50rem;
+    width: 100%;
+    height: 60rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     background: #292847;
     border-radius: 2rem;
-    
+    position: relative;
 }
 
 .poster{
     width: 100%;
-    height: 35rem;
-    margin-bottom: 2.5rem;
+    height: 75%;
     position: relative;
     overflow-y: hidden;
+    border-top-left-radius: 2rem ;
+    border-top-right-radius: 2rem ;
 }
 
 .poster img{
@@ -33,7 +34,7 @@
     flex-direction: column;
     align-items: center;
     background: rgba(217, 217, 217,0.25);
-    padding: 5rem;
+    padding: 10rem 2.5rem;
     transform: translateY(150%);
     transition: transform 0.25s ease-in-out;
 }
@@ -51,10 +52,10 @@
 
 .genreContainer{
     width: 100%;
-    height: 5rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .genreContainerActive{
@@ -64,6 +65,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     place-items: center;
+}
+
+.genreContainer .genre{
+    margin: 0.5rem 0;
 }
 
 .genre{
@@ -78,30 +83,28 @@
     font-family: 'Montserrat';
 }
 
-.year{
-    color: #fff;
-    font-size: 2.8rem;
-    font-family: 'Montserrat';
-    margin-bottom: 1.5rem;
+.year,.name{
+    flex-basis: 10%;
 }
 
-.info{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 3rem;
+.year{
+    color: #fff;
+    font-size: 2.4rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-top: 3rem;
 }
 
 .name{
-    font-size: 1.8rem;
-    padding: 0 1rem;
+    font-size: 2rem;
+    padding: 0 5rem;
+    text-align: center;
+    margin-bottom: 3rem;
     color: #fff;
     font-family: 'Montserrat';
     font-weight: 400;
     cursor: pointer;
     text-decoration: none;
-    flex-basis: 80%;
 }
 
 .rating{
@@ -114,4 +117,25 @@
     font-size: 2rem;
     font-family: 'Montserrat';
     border-radius: 1rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .name{
+        padding: 0 2.5rem;
+        font-size: 2rem;
+    }
+    .genreContainer, 
+    .genreContainerActive{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

@@ -16,7 +16,7 @@ const Header = () => {
           fontWeight: 'bold',
           textTransform: 'uppercase'
         }}>
-          Favorites
+          My list
         </Link>
     </header>
   )
